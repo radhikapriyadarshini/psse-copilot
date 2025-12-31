@@ -58,7 +58,7 @@ psse-copilot/
 ├── templates/ # Future extensions
 ├── venv/
 ├── README.md
-└── requirements.txt
+└── requirements.tx
 
 ---
 

@@ -60,9 +60,6 @@ psse-copilot/
 ├── README.md
 └── requirements.txt
 
-yaml
-Copy code
-
 ---
 
 ## ▶️ How to Run

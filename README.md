@@ -20,7 +20,7 @@ Transient stability studies often involve:
 - Repetitive scripting
 - Manual event setup
 - Inconsistent documentation
-- Time-consuming report writing
+- Reduces repetitive report drafting by generating structured, report-ready study documentation.
 
 PSSE Copilot helps by:
 - Generating **PSS®E-ready Python scripts**

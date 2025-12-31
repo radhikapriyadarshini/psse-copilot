@@ -80,19 +80,14 @@ outputs/metadata.txt – Study metadata
 🛠️ Requirements
 
 Python 3.9+ (tool logic only)
-
 PSS®E installation required only to run generated scripts
-
 Windows OS (current focus)
 
 🚧 Roadmap
 
 Multi-contingency support
-
 Improved channel selection logic
-
 Integration with AI reasoning engines
-
 Support for additional study types
 
 📜 Disclaimer

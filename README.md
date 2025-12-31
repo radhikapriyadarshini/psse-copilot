@@ -42,7 +42,7 @@ PSSE Copilot helps by:
 
 ---
 
-## 📂 Project Structure
+ 📂 Project Structure
 
 
 psse-copilot/

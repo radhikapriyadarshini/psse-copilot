@@ -59,3 +59,40 @@ psse-copilot/
 ├── templates/             # Future extensions
 ├── README.md
 └── requirements.txt
+
+▶️ How to Run
+1️⃣ Activate virtual environment (Windows)
+.\venv\Scripts\activate
+
+2️⃣ Run the CLI application
+python -m cli.main
+
+📝 Generated Outputs
+
+After execution, the following files are created automatically:
+outputs/ts_main_script.py – PSS®E transient stability script
+outputs/study_report.md – Structured, report-ready documentation
+outputs/metadata.txt – Study metadata
+
+🛠️ Requirements
+
+Python 3.9+ (tool logic only)
+PSS®E installation required only to execute generated scripts
+Windows OS (current focus)
+
+🚧 Roadmap (Agent Evolution)
+
+v0.2: Agent-driven decision logic for contingencies & channels
+v0.3: Result interpretation and conclusion drafting
+v0.4: Multi-study orchestration and recommendations
+
+📜 Disclaimer
+
+This tool is intended for engineering assistance and workflow support.
+Users remain responsible for validating all studies against applicable
+grid codes and utility standards.
+
+👩‍💻 Author
+
+Radhika Priyadarshini
+PhD – Power System Engineering

@@ -1,20 +1,16 @@
-from agent.stability_agent import run_stability_agent
-
-def main():
-    print("\nPSSE Copilot – Transient Stability Agent\n")
-
-    fault_bus = input("Enter fault bus number: ")
-    fault_type = input("Enter fault type (3ph / ll / lg): ")
-    clear_time = input("Enter fault clearing time (s): ")
-
-    result = run_stability_agent(
-    fault_bus=fault_bus,
-    fault_type=fault_type,
-    clear_time=clear_time
-    )
-
-    print("\n" + result)
+from agent.agent import run_agent
 
 
 if __name__ == "__main__":
-    main()
+    study_goal = input("Enter study goal: ")
+
+    context = {
+        "intent": "planning",
+        "focus": "generator buses"
+    }
+
+    config = run_agent(study_goal, context)
+
+    print("\nAgent decided study configuration:\n")
+    for k, v in config.items():
+        print(f"{k}: {v}")

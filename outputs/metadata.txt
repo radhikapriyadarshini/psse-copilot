@@ -1,4 +1,0 @@
-Generated on: 2025-12-31 11:07:42
-Fault bus: 7
-Fault type: lg
-Clearing time: 0.2s

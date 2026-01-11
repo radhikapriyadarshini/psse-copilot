@@ -1,15 +1,15 @@
 # PSSE Copilot ⚡  
-*A CLI-based assistant for PSS®E transient stability studies*
+*A CLI-based engineering assistant for PSS®E transient stability workflows*
 
 ---
 
 ## 📌 Overview
 
-**PSSE Copilot** is a lightweight, CLI-based engineering assistant designed to help
-power system engineers **set up transient stability studies in PSS®E** efficiently
-and consistently.
+**PSSE Copilot** is a lightweight, CLI-based engineering assistant that helps
+power system engineers **set up transient stability studies in PSS®E**
+in a consistent and repeatable way.
 
-This tool focuses on **study setup automation and engineering documentation** —
+The tool focuses on **workflow automation and structured study documentation** —
 not simulation execution — ensuring compatibility with licensed PSS®E environments.
 
 ---
@@ -17,93 +17,82 @@ not simulation execution — ensuring compatibility with licensed PSS®E environ
 ## 🎯 Why PSSE Copilot?
 
 Transient stability studies often involve:
-- Repetitive scripting
-- Manual event setup
-- Inconsistent documentation
-- Time-consuming report writing
+- Repetitive scripting for events and channels
+- Manual setup of similar study cases
+- Rewriting boilerplate sections of reports
+- Inconsistent study documentation across projects
 
 PSSE Copilot helps by:
+- Automating **study setup logic**
 - Generating **PSS®E-ready Python scripts**
-- Creating **report-ready study text**
-- Enforcing **engineering best practices**
-- Reducing setup time and human error
+- Producing **structured, report-ready documentation**
+- Reducing repetitive engineering effort
 
 ---
 
-## 🧠 What This Tool Does (v0.1)
+## 🧠 What This Tool Does (v0.1 – Current)
 
-✔ Collects study inputs via CLI  
-✔ Generates transient stability event logic  
-✔ Produces PSS®E Python script templates  
-✔ Creates markdown study reports  
-✔ Saves outputs automatically for reuse  
+- Collects study inputs via CLI  
+- Generates deterministic transient stability event logic  
+- Produces PSS®E Python script templates  
+- Auto-generates **structured report sections** (objective, assumptions, criteria)  
+- Saves all outputs for reuse and traceability  
 
-> ⚠️ This tool does **not** execute PSS®E simulations and does not replace engineering judgment.
+> ⚠️ This version focuses on **deterministic automation**.  
+> It does not interpret simulation results or replace engineering judgment.
 
 ---
 
 ## 📂 Project Structure
 
-
+```text
 psse-copilot/
-├── agent/ # Engineering logic
-│ ├── prompts.py
-│ └── stability_agent.py
-├── cli/ # CLI entry point
-│ └── main.py
-├── outputs/ # Generated study artifacts
-│ ├── ts_main_script.py
-│ ├── study_report.md
-│ └── metadata.txt
-├── templates/ # Future extensions
-├── venv/
+├── agent/                 # Engineering logic
+│   ├── prompts.py
+│   └── stability_agent.py
+├── cli/                   # CLI entry point
+│   └── main.py
+├── outputs/               # Generated study artifacts
+│   ├── ts_main_script.py
+│   ├── study_report.md
+│   └── metadata.txt
+├── templates/             # Future extensions
 ├── README.md
 └── requirements.txt
 
-yaml
-Copy code
-
----
-
-## ▶️ How to Run
-
-### 1️⃣ Activate virtual environment (Windows)
-
-```powershell
+▶️ How to Run
+1️⃣ Activate virtual environment (Windows)
 .\venv\Scripts\activate
+
 2️⃣ Run the CLI application
-powershell
-Copy code
 python -m cli.main
-📝 Example Output
-After running, the following files are generated automatically:
 
+📝 Generated Outputs
+
+After execution, the following files are created automatically:
 outputs/ts_main_script.py – PSS®E transient stability script
-
-outputs/study_report.md – Report-ready documentation
-
+outputs/study_report.md – Structured, report-ready documentation
 outputs/metadata.txt – Study metadata
 
 🛠️ Requirements
+
 Python 3.9+ (tool logic only)
-
-PSS®E installation required only to run generated scripts
-
+PSS®E installation required only to execute generated scripts
 Windows OS (current focus)
 
-🚧 Roadmap
-Multi-contingency support
+🚧 Roadmap (Agent Evolution)
 
-Improved channel selection logic
-
-Integration with AI reasoning engines
-
-Support for additional study types
+v0.2: Agent-driven decision logic for contingencies & channels
+v0.3: Result interpretation and conclusion drafting
+v0.4: Multi-study orchestration and recommendations
 
 📜 Disclaimer
-This tool is intended for educational and engineering assistance purposes.
-Users are responsible for validating all studies against applicable grid codes
-and utility standards.
 
-Author
+This tool is intended for engineering assistance and workflow support.
+Users remain responsible for validating all studies against applicable
+grid codes and utility standards.
+
+👩‍💻 Author
+
 Radhika Priyadarshini
+PhD – Power System Engineering

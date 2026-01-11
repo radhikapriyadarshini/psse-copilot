@@ -80,11 +80,13 @@ Python 3.9+ (tool logic only)
 PSS®E installation required only to execute generated scripts
 Windows OS (current focus)
 
-🚧 Roadmap (Agent Evolution)
+## 📐 Design Documentation
 
-v0.2: Agent-driven decision logic for contingencies & channels
-v0.3: Result interpretation and conclusion drafting
-v0.4: Multi-study orchestration and recommendations
+Detailed agent design notes are available here:
+- [Agent Design Notes](docs/agent-design.md)
+This document explains the motivation, scope, decision logic,
+testing strategy, and design philosophy behind the PSSE Copilot agent.
+
 
 📜 Disclaimer
 

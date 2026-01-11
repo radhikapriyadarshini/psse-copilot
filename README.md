@@ -1,4 +1,4 @@
-# PSSE Copilot ⚡  
+# PSSE Copilot 
 *A CLI-based engineering assistant for PSS®E transient stability workflows*
 
 ---
